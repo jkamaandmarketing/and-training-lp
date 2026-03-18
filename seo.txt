@@ -1,0 +1,5 @@
+GTM_ID: GTM-WG6H5C5Z
+SITE_URL: https://and-training.net/
+TITLE: アンドトレーニング | トレーニング記録アプリ【無料】iOS/Android対応
+APP_STORE: https://apps.apple.com/jp/app/id6755945883
+GOOGLE_PLAY: https://play.google.com/store/apps/details?id=app.andtraining.official
