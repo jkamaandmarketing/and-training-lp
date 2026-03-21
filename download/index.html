@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アンドトレーニング | ダウンロード</title>
+    <style>
+      :root {
+        --orange: #ff6b35;
+        --text: #111111;
+        --sub: #666666;
+        --line: #e9e9e9;
+        --bg: #f7f7f7;
+        --white: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Yu Gothic", "Hiragino Sans", sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #fafafa 0%, #f2f2f2 100%);
+      }
+
+      .wrap {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 520px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px 24px;
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        color: var(--sub);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(32px, 7vw, 52px);
+        line-height: 1.08;
+        font-weight: 800;
+      }
+
+      .accent { color: var(--orange); }
+
+      .lead {
+        margin: 18px auto 0;
+        max-width: 360px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--sub);
+      }
+
+      .status {
+        margin-top: 28px;
+        padding: 14px 16px;
+        border-radius: 14px;
+        background: #fff7f3;
+        color: #b14e27;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .buttons {
+        display: grid;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 54px;
+        padding: 14px 18px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+
+      .btn:hover { transform: translateY(-1px); opacity: 0.96; }
+
+      .btn-primary { background: var(--orange); color: #ffffff; }
+      .btn-secondary { background: #111111; color: #ffffff; }
+      .btn-ghost { background: #ffffff; color: #111111; border: 1px solid var(--line); }
+
+      .note {
+        margin-top: 16px;
+        font-size: 12px;
+        color: #888888;
+        line-height: 1.6;
+      }
+
+      .footer {
+        margin-top: 24px;
+        font-size: 12px;
+        color: #999999;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 480px) {
+        .card { padding: 28px 18px; border-radius: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <main class="card">
+        <p class="eyebrow">TRAINING FOR EVERY LIFE</p>
+        <h1>
+          トレーニングを、<br />
+          <span class="accent">記録する</span>習慣へ。
+        </h1>
+        <p class="lead">
+          成長が見えるトレーニング記録アプリ。<br />
+          記録・振り返り・継続を、シンプルにまとめて管理できます。
+        </p>
+
+        <div id="status" class="status">
+          ご利用端末に合わせてストアへご案内します。自動で切り替わらない場合は、下のボタンから選択してください。
+        </div>
+
+        <div class="buttons">
+          <a id="primaryBtn" class="btn btn-primary" href="#">アプリをダウンロード</a>
+          <a class="btn btn-secondary" href="https://apps.apple.com/us/app/アンドトレーニング/id6755945883?ppid=451d34e0-45f4-4de5-85a2-ac6d17b7417f" target="_blank">App Store</a>
+          <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=app.andtraining.official" target="_blank">Google Play</a>
+        </div>
+
+        <p class="note">QRコードからアクセスした場合は、このページを短縮URLの遷移先に設定してください。</p>
+        <div class="footer">AND TRAINING</div>
+      </main>
+    </div>
+
+    <script>
+      const APP_STORE_URL = "https://apps.apple.com/us/app/アンドトレーニング/id6755945883?ppid=451d34e0-45f4-4de5-85a2-ac6d17b7417f";
+      const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=app.andtraining.official";
+      const FALLBACK_URL = APP_STORE_URL;
+      const REDIRECT_DELAY_MS = 1200;
+
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      const isAndroid = /Android/.test(ua);
+
+      const statusEl = document.getElementById("status");
+      const primaryBtn = document.getElementById("primaryBtn");
+
+      let targetUrl = FALLBACK_URL;
+      let platformName = "ストア";
+
+      if (isIOS) {
+        targetUrl = APP_STORE_URL;
+        platformName = "App Store";
+      } else if (isAndroid) {
+        targetUrl = PLAY_STORE_URL;
+        platformName = "Google Play";
+      }
+
+      primaryBtn.href = targetUrl;
+      primaryBtn.textContent = `${platformName}でダウンロード`;
+
+      if (isIOS || isAndroid) {
+        statusEl.textContent = `${platformName}へ自動で移動します。切り替わらない場合は、下のボタンを押してください。`;
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, REDIRECT_DELAY_MS);
+      } else {
+        statusEl.textContent = "PCからアクセス中です。お使いのスマートフォンに合わせてストアを選択してください。";
+      }
+    </script>
+  </body>
+</html>
