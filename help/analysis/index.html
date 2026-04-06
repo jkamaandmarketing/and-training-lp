@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WG6H5C5Z');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+<link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+<link rel="icon" type="image/x-icon" href="../../favicon/favicon.ico">
+<link rel="manifest" href="../../favicon/site.webmanifest">
+<meta name="theme-color" content="#FF6B2B">
+
+<!-- SEO -->
+<title>分析する | ヘルプ | アンドトレーニング</title>
+<meta name="description" content="アンドトレーニングでのトレーニングデータ分析方法を詳しく解説します。グラフ表示や統計データで進捗を可視化できます。">
+<link rel="canonical" href="https://and-training.net/help/analysis/">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://and-training.net/help/analysis/">
+<meta property="og:title" content="分析する | ヘルプ | アンドトレーニング">
+<meta property="og:description" content="アンドトレーニングでのトレーニングデータ分析方法を詳しく解説します。">
+<meta property="og:site_name" content="アンドトレーニング">
+<meta property="og:image" content="https://and-training.net/images/ogp.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="分析する | ヘルプ | アンドトレーニング">
+<meta name="twitter:description" content="アンドトレーニングでのトレーニングデータ分析方法を詳しく解説します。">
+<meta name="twitter:image" content="https://and-training.net/images/ogp.png">
+
+<!-- Structured Data - BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://and-training.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ヘルプ",
+      "item": "https://and-training.net/help/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "分析する",
+      "item": "https://and-training.net/help/analysis/"
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data - FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "グラフで何が確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "種目ごとの重量推移、ボリューム、頻度などを視覚的に確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "統計データはどのように表示されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "総トレーニング日数、総ボリューム、最大重量などが自動集計されて表示されます。"
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG6H5C5Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===== HEADER ===== -->
+<header style="display: block;">
+  <div class="nav-inner">
+    <a href="../../" class="nav-logo">
+      <img src="../../images/image_01.jpg" alt="アンドトレーニング">
+    </a>
+    <nav class="nav-menu">
+      <a href="../../#features" class="nav-link">機能</a>
+      <a href="../../help/" class="nav-link">ヘルプ</a>
+      <a href="../../column/" class="nav-link">コラム</a>
+      <a href="../../glossary/" class="nav-link">用語集</a>
+      <a href="../../news/" class="nav-link">お知らせ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="../../#cta" class="nav-cta">ダウンロード</a>
+    </div>
+    <button class="nav-hamburger" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="nav-overlay">
+  <nav class="nav-mobile">
+    <a href="../../#features" class="nav-mobile-link">機能</a>
+    <a href="../../help/" class="nav-mobile-link">ヘルプ</a>
+    <a href="../../column/" class="nav-mobile-link">コラム</a>
+    <a href="../../glossary/" class="nav-mobile-link">用語集</a>
+    <a href="../../news/" class="nav-mobile-link">お知らせ</a>
+    <a href="../../#cta" class="nav-mobile-cta">ダウンロード</a>
+  </nav>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main style="padding-top: 80px; min-height: 60vh;">
+  <div class="container">
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" style="margin-bottom: 32px;">
+      <ol style="display: flex; gap: 8px; list-style: none; padding: 0; font-size: .85rem; color: var(--gray-md); flex-wrap: wrap;">
+        <li><a href="../../" style="color: var(--orange); text-decoration: none;">ホーム</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="../" style="color: var(--orange); text-decoration: none;">ヘルプ</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">分析する</li>
+      </ol>
+    </nav>
+
+    <h1 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; margin-bottom: 16px; letter-spacing: -.02em;">分析する</h1>
+    <p style="font-size: .95rem; color: var(--gray-md); margin-bottom: 48px; line-height: 1.7;">トレーニングデータを分析して、進捗を可視化する方法をご案内します。</p>
+
+    <!-- Content -->
+    <div style="max-width: 800px;">
+      <!-- Graph Section -->
+      <section style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.6rem; font-weight: 900; margin-bottom: 24px; color: var(--black); letter-spacing: -.01em;">グラフで進捗を確認</h2>
+        <p style="font-size: .95rem; color: var(--gray-dk); line-height: 1.85; margin-bottom: 20px;">
+          トレーニングデータはグラフで視覚的に確認できます。種目ごとの重量推移やボリュームの変化を一目で把握できます。
+        </p>
+        <div style="background: var(--orange-bg); border-left: 3px solid var(--orange); padding: 16px 20px; border-radius: 4px; margin-bottom: 20px;">
+          <p style="font-size: .88rem; color: var(--gray-dk); line-height: 1.7; margin: 0;">
+            <strong style="color: var(--black);">ポイント：</strong>グラフ表示で成長の軌跡を確認することで、モチベーション維持に役立ちます。
+          </p>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.6rem; font-weight: 900; margin-bottom: 24px; color: var(--black); letter-spacing: -.01em;">統計データ</h2>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <!-- Stat 1 -->
+          <div style="border: 1.5px solid #e8e8e8; border-radius: var(--radius-md); padding: 24px; background: var(--white);">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--black);">総トレーニング日数</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">これまでトレーニングを実施した日数が自動的に集計されます。継続の記録として確認できます。</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div style="border: 1.5px solid #e8e8e8; border-radius: var(--radius-md); padding: 24px; background: var(--white);">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--black);">総ボリューム</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">重量×回数×セット数で計算されるボリュームの合計値。トレーニング量の指標になります。</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div style="border: 1.5px solid #e8e8e8; border-radius: var(--radius-md); padding: 24px; background: var(--white);">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--black);">最大重量（1RM推定）</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">種目ごとの最大重量が記録されます。自己ベスト更新の目標設定に活用できます。</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div style="border: 1.5px solid #e8e8e8; border-radius: var(--radius-md); padding: 24px; background: var(--white);">
+            <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--black);">部位別トレーニング頻度</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">胸・背中・脚などの部位ごとに、トレーニング頻度を確認できます。バランスの調整に役立ちます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section style="background: var(--gray-lt); border-radius: var(--radius-md); padding: 32px 28px; margin-bottom: 40px;">
+        <h2 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 20px; letter-spacing: -.01em;">よくある質問</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <!-- FAQ -->
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: var(--black); margin-bottom: 8px;">Q. グラフで何が確認できますか？</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">A. 種目ごとの重量推移、ボリューム、頻度などを視覚的に確認できます。期間を設定して表示することも可能です。</p>
+          </div>
+
+          <!-- FAQ -->
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: var(--black); margin-bottom: 8px;">Q. 統計データはどのように表示されますか？</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">A. 総トレーニング日数、総ボリューム、最大重量などが自動集計されて表示されます。データは記録と連動してリアルタイムに更新されます。</p>
+          </div>
+
+          <!-- FAQ -->
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: var(--black); margin-bottom: 8px;">Q. 過去のデータと比較できますか？</h3>
+            <p style="font-size: .9rem; color: var(--gray-dk); line-height: 1.7;">A. はい、期間を指定してグラフ表示することで、過去との比較が簡単にできます。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Articles Section -->
+      <section style="margin-top: 48px;">
+        <h2 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 20px; letter-spacing: -.01em;">関連記事</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+          <a href="graph/" style="display: block; border: 1.5px solid #e8e8e8; border-radius: var(--radius-md); padding: 24px; background: var(--white); text-decoration: none; transition: all .2s;" onmouseover="this.style.borderColor='var(--orange)'; this.style.background='#fffaf7';" onmouseout="this.style.borderColor='#e8e8e8'; this.style.background='var(--white)';">
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--black);">グラフの見方</h3>
+            <p style="font-size: .88rem; color: var(--gray-dk); line-height: 1.7; margin: 0;">各種グラフの表示方法や読み取り方を詳しく解説します。</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e8e8e8;">
+      <a href="../" style="color: var(--orange); font-size: .9rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+        ← ヘルプトップに戻る
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-copy">© 2025 アンドトレーニング. All rights reserved.</div>
+    <div style="margin-top:10px;display:flex;gap:20px;justify-content:center;">
+      <a href="https://and-marketing.co.jp/" target="_blank" rel="noopener noreferrer" style="font-size:.75rem;color:#555;text-decoration:underline;letter-spacing:.04em;transition:color .2s;" onmouseover="this.style.color='#888'" onmouseout="this.style.color='#555'">運営会社</a>
+      <a href="https://and-marketing.co.jp/privacy_policy_andtraining/" target="_blank" rel="noopener noreferrer" style="font-size:.75rem;color:#555;text-decoration:underline;letter-spacing:.04em;transition:color .2s;" onmouseover="this.style.color='#888'" onmouseout="this.style.color='#555'">プライバシーポリシー</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger Menu Toggle
+  (function() {
+    const hamburger = document.querySelector('.nav-hamburger');
+    const overlay = document.querySelector('.nav-overlay');
+    const mobileLinks = document.querySelectorAll('.nav-mobile-link, .nav-mobile-cta');
+
+    if (hamburger && overlay) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = overlay.classList.contains('active') ? 'hidden' : '';
+      });
+
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          hamburger.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  })();
+</script>
+</body>
+</html>

@@ -9,7 +9,15 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(cat:*)",
+      "Bash(tree:*)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(done)",
+      "Bash(echo:*)",
+      "Bash(git mv:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }
