@@ -1128,3 +1128,211 @@
   }
   .feature-transfer .feature-num { color: #3B6DF0; }
 
+  /* ===== GLOSSARY & EXERCISES ===== */
+  .badge-coming-soon {
+    font-size: .68rem;
+    font-weight: 600;
+    background: var(--orange-bg);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    padding: 1px 7px;
+    margin-left: 6px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .exercise-link-disabled {
+    color: var(--text, var(--black));
+    text-decoration: none;
+    cursor: default;
+  }
+  .exercise-link-disabled:hover {
+    color: var(--text, var(--black));
+  }
+
+  .article-image-placeholder {
+    margin: 32px 0;
+    text-align: center;
+  }
+  .article-image-placeholder .img-placeholder {
+    background: var(--gray-lt);
+    border: 2px dashed #ddd;
+    border-radius: var(--radius-md);
+    padding: 60px 20px;
+    color: var(--gray-md);
+    font-size: .9rem;
+    font-weight: 600;
+  }
+  .article-image-placeholder figcaption {
+    font-size: .8rem;
+    color: var(--gray-md);
+    margin-top: 8px;
+  }
+
+  /* Glossary Cards */
+  .glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .glossary-card {
+    display: block;
+    padding: 20px 24px;
+    background: var(--white);
+    border: 1.5px solid #e8e8e8;
+    border-radius: var(--radius-md);
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .glossary-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 4px 16px rgba(255,107,43,.1);
+  }
+  .glossary-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 6px;
+  }
+  .glossary-card-desc {
+    font-size: .85rem;
+    color: var(--gray-md);
+    line-height: 1.6;
+  }
+
+  /* Exercises Table */
+  .exercises-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: .9rem;
+  }
+  .exercises-table th,
+  .exercises-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .exercises-table th {
+    background: var(--gray-lt);
+    font-weight: 700;
+    color: var(--gray-dk);
+    font-size: .85rem;
+  }
+  .exercises-table tr:hover {
+    background: var(--orange-bg);
+  }
+
+  /* Part Navigation */
+  .part-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .part-nav-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--white);
+    border: 1.5px solid #ddd;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--gray-dk);
+    transition: all .2s;
+  }
+  .part-nav-link:hover,
+  .part-nav-link.active {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+  }
+
+  /* Large Link Card */
+  .link-card-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+    background: var(--orange-bg);
+    border: 2px solid var(--orange);
+    border-radius: var(--radius-md);
+    margin-top: 32px;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .link-card-large:hover {
+    box-shadow: 0 8px 24px rgba(255,107,43,.2);
+    transform: translateY(-2px);
+  }
+  .link-card-large-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--orange);
+  }
+  .link-card-large-arrow {
+    font-size: 1.5rem;
+    color: var(--orange);
+  }
+
+  /* Section Heading for Glossary */
+  .glossary-section-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--black);
+    margin: 48px 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .glossary-section-title::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: var(--orange);
+    border-radius: 2px;
+  }
+
+  /* Related Terms */
+  .related-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .related-term-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--gray-lt);
+    border-radius: var(--radius-sm);
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--gray-dk);
+    transition: all .2s;
+  }
+  .related-term-link:hover {
+    background: var(--orange-bg);
+    color: var(--orange);
+  }
+
+  @media (max-width: 768px) {
+    .glossary-grid {
+      grid-template-columns: 1fr;
+    }
+    .link-card-large {
+      padding: 20px 24px;
+    }
+    .link-card-large-text {
+      font-size: 1rem;
+    }
+    .exercises-table th,
+    .exercises-table td {
+      padding: 10px 12px;
+      font-size: .85rem;
+    }
+  }
+
