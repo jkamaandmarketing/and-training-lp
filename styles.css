@@ -1336,3 +1336,113 @@
     }
   }
 
+  /* ===== APP CTA BANNER (Footer) ===== */
+  .app-cta-banner {
+    background: var(--orange);
+    padding: 32px 0;
+    margin-top: 64px;
+  }
+  .app-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .app-cta-name {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .app-cta-desc {
+    font-size: .9rem;
+    color: rgba(255,255,255,0.85);
+    margin: 0;
+  }
+  .app-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .app-cta-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: var(--white);
+    color: var(--orange);
+    font-weight: 700;
+    font-size: .9rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: opacity .2s;
+  }
+  .app-cta-btn:hover {
+    opacity: .85;
+  }
+  .app-cta-badge {
+    display: inline-block;
+    transition: opacity .2s, transform .2s;
+  }
+  .app-cta-badge:hover {
+    opacity: .85;
+    transform: scale(1.02);
+  }
+  .app-cta-badge img {
+    display: block;
+    height: 40px;
+    width: auto;
+  }
+  @media (max-width: 600px) {
+    .app-cta-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  /* ===== ARTICLE CTA (End of Article) ===== */
+  .article-cta {
+    margin-top: 48px;
+    padding: 28px;
+    background: var(--orange-bg);
+    border-left: 3px solid var(--orange);
+    border-radius: var(--radius-md);
+  }
+  .article-cta-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 16px;
+  }
+  .article-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .article-cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: .85rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: opacity .2s;
+  }
+  .article-cta-btn:hover {
+    opacity: .85;
+  }
+  .article-cta-badge {
+    display: inline-block;
+    transition: opacity .2s, transform .2s;
+  }
+  .article-cta-badge:hover {
+    opacity: .85;
+    transform: scale(1.02);
+  }
+  .article-cta-badge img {
+    display: block;
+    height: 40px;
+    width: auto;
+  }
+
